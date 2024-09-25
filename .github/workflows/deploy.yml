@@ -3,16 +3,17 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - main 
+  workflow_dispatch: 
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-      
+
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
@@ -21,13 +22,23 @@ jobs:
     - name: Install Node.js (optional, if you have npm dependencies)
       uses: actions/setup-node@v3
       with:
-        node-version: '16'  # Puedes ajustar la versión si es necesario
+        node-version: '16'
     
     - name: Build the site
       run: hugo --minify
-    
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+
+    - name: Upload artifact for deployment
+      uses: actions/upload-pages-artifact@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        path: ./public  # Carpeta generada por Hugo con los archivos estáticos
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write  # Permiso para escribir en GitHub Pages
+      id-token: write
+
+    steps:
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v1
