@@ -1,0 +1,48 @@
+title = "Proud to have earned the trust of these companies"
+[[education]]
+  date  = "2013"
+  title = "Vanderbilt University"
+  text  = "Finished a year studying the course «Pattern-Oriented Software Architectures for Concurrent and Networked Software». The course was taught by Douglas C. Schmidt, a professor of computer science and well known author of several books on patterns and software architecture."
+
+[[education]]
+  date  = "2005 - 2006"
+  title = "John Bryce Training Center"
+  text  = "Successfully completed with very high grade a two-year course on «System Analysis with UML in Web Services Environment», instructed by leading Israeli software development specialists. The course was focused on the design and architecture of modern applications using UML."
+
+[[education]]
+  date  = "1990 - 1996"
+  title = "National University of Kyiv"
+  text  = "Graduated with honors from the Faculty of Applied Mathematics and Programming. The faculty is one of the leading faculties in Ukraine in the field of computer science and information technology in the oldest and one of the most prestigious universities in Ukraine."
+
+
+[[slides]]
+image = "img/airvet.png"
+title = "Airvet"
+url = "https://airvet.com"
+
+[[slides]]
+image = "img/siclo.svg"
+title = "Siclo"
+url = "https://siclo.com"
+
+[[slides]]
+image = "img/gfi-software-b.svg"
+title = "GFI"
+url = "https://gfi.ai/"
+
+[[slides]]
+image = "img/Aurea.svg"
+title = "Aurea"
+url = "https://aurea.com/"
+
+[[slides]]
+image = "img/clickbus.svg"
+title = "Clickbus"
+url = "https://www.clickbus.com.mx/"
+
+[[slides]]
+image = "img/logo-linio.svg"
+title = "Linio"
+url = "#"
+
+

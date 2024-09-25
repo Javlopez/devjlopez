@@ -1,0 +1,59 @@
+{{/* Default data */}}
+{{ $title := "Professional milestones" }}
+{{ $companies := slice
+  (dict "tags" (dict "name" "go"  "url" "/tags/go/") "name" "GlobalWidgets" "role" "Team Leader" "date" "2019 - Present" "text" (slice "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc." "Consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc."))
+  (dict "name" "TechNova Solutions" "role" "CTO" "date" "2017 - 2019" "text" (slice "Sed ut purus eget nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."))
+  (dict "name" "BrightMind Inc." "role" "Software Engineer" "date" "2015 - 2017" "text" (slice "Consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit."))
+}}
+
+{{/* Custom data from configuration file */}}
+{{ with site.Data.sections.experience }}
+  {{ $companies = slice }}
+  {{ if .title }}{{ $title = .title }}{{ end }}
+  {{ if .company }}{{ $companies = .company }}{{ end }}
+{{ end }}
+
+<h2 class="text-4xl md:text-5xl lg:text-7xl  text-center font-medium font-poppins text-gray-400">
+  {{ $title }}
+</h2>
+<div class="relative mx-auto mt-12 flex w-full flex-col text-center text-gray-600">
+  <span class="left-1/4 absolute inset-y-0 ml-10 hidden w-0.5 bg-gray-300 md:block"></span>
+  {{ range $index, $element := $companies }}
+    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+      <div class="md:w-1/4">
+        <div class="justify-center md:justify-start font-light text-3xl">
+          {{ $element.name }}
+        </div>
+      </div>
+      <div class="md:w-3/4">
+        <div class="relative flex md:pl-16">
+          <span
+            class="absolute left-7 top-1 hidden h-6 w-6 rounded-full border-2 border-gray-300 bg-white md:block"></span>
+
+          <div class="mt-1 flex">
+            <div class="md:-mt-1 md:pl-16"
+             {{ if eq $index 0 }}
+                  style="padding: 21px; padding-left: 4rem; border: 1px solid #ddd; border-radius: 10px; background-color: #ddd;"
+                {{ end }}
+            >
+              <span class="block font-semibold">{{ $element.date }}</span>
+              <span class="block pt-2 font-header text-xl font-semibold">{{ $element.role }}</span>
+              <span class="block pt-2 text-xl font-light">
+                {{ range $element.text }}
+                  <p class="py-2">{{ . }}</p>
+                {{ end }}
+             
+                <span class="text-sm">
+                  <span class="text-lg lg:text-xl font-medium">Stack:
+                    {{ range $element.tags }}
+                      <a href="{{ .url }}" class="text-blue-500 hover:underline">#{{ .name }}</a>
+                    {{ end }}
+                  </span>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>

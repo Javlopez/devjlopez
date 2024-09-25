@@ -1,0 +1,27 @@
+title = "Focused on impact and continuous growth."
+
+[[skill]]
+  title = "Polyglot Software Engineer"
+  text  = "As a polyglot developer, I specialize in Go, PHP, and Python, building scalable, testable, and maintainable solutions. With extensive experience in developing microservices and architecting robust software across various platforms, I ensure seamless integration and adaptability. While my focus is on these core languages, my expertise extends to a variety of other technologies and frameworks, allowing me to approach challenges with a broad, versatile toolkit."
+  icon  = "bxl-go-lang"
+
+
+[[skill]]
+  title = "Cloud Architecture & Infrastructure"
+  text  = "With extensive experience in cloud computing, I specialize in designing and managing scalable, secure, and cost-effective solutions, primarily on AWS. My expertise includes containerized applications and traditional infrastructure. I also have a strong background in Infrastructure as Code, ensuring efficient, automated deployments."
+  icon  = "bx-cloud"
+
+[[skill]]
+  title = "Kubernetes & Container Orchestration"
+  text  = "Expert in Kubernetes for deploying and managing scalable, containerized applications. I have extensive experience with multi-architecture builds and orchestrating complex environments. Additionally, I have contributed to the Rook open-source project, showcasing my expertise in Kubernetes storage solutions."
+  icon  = "bxl-docker"
+
+[[skill]]
+  title = "Leadership & Team Building"
+  text  = "Built and led an IT team from the ground up, fostering a high-performing culture focused on collaboration and innovation. With experience managing global teams, I have successfully coordinated efforts across different time zones and cultures, driving projects to completion and delivering impactful results."
+  icon  = "bx-leadership"
+
+[[skill]]
+  title = "Software Architecture & Microservices"
+  text  = "Designed and implemented a microservices-based architecture, leveraging Kubernetes for container orchestration, ensuring scalability and resilience. With a strong focus on DevOps practices, I have streamlined CI/CD pipelines, enabling rapid and reliable deployment. Proficient in setting up monitoring solutions using Prometheus and Grafana, ensuring real-time insights into application performance and system health."
+  icon  = "bx-cube"

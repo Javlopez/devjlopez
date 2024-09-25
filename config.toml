@@ -1,0 +1,14 @@
+baseURL = 'https://devjlopez.com/'
+
+languageCode = 'en-us'
+title        = 'DevJlopez'
+
+googleAnalytics = ''
+
+[params]
+  favicon     = "img/devjlopez-favicon-color.png"
+  description = "Javier Lopez Lopez personal website"
+  keywords    = "Javier Lopez Lopez, personal website, blog, portfolio"
+
+  [params.author]
+    name = 'Dev Javier Lopez'

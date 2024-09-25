@@ -1,0 +1,15 @@
+[[project]]
+  title = "Rook contributor"
+  text = [
+   "During my time contributing to the Rook project, I worked extensively with Go and Kubernetes, improving various aspects of the platform. My contributions included enhancing Helm charts, improve core functionality, and improving documentation to ensure clarity and ease of use.",
+   "I also played a key role in writing and optimizing tests to ensure the robustness of the system. These efforts helped improve the overall functionality and reliability of Rook, strengthening its integration with Kubernetes."
+  ]
+  link = "https://github.com/rook/rook"
+
+
+[[project]]
+  title = "Ceph contributor"
+  text = [
+   "Ceph storage contributor, helping to improve grafana dashboards",
+  ]
+  link = "https://ceph.io/en/"

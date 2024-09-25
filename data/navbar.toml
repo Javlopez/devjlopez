@@ -1,0 +1,28 @@
+title = "Devjlopez"
+logo  = "img/devjlopez-high-resolution-logo-transparent.png"
+
+[[menu]]
+  text        = "Home"
+  description = "Welcome to my website"
+  link        = "/"
+  target      = "_self"
+
+[[menu]]
+  text        = "Posts"
+  description = "Read my latest posts"
+  link        = "/posts"
+  target      = "_self"
+
+
+[[menu]]
+  text        = "Email: sjavierlopez@gmail.com"
+  description = "Send me and email"
+  link        = "mailto:sjavierlopez@gmail.com"
+  target      = "_blank"
+
+
+[button]
+  enabled = true
+  text    = "Get my CV"
+  link    = "files/Javier_Lopez_Lopez.pdf"
+  target  = "_blank"

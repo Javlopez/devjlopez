@@ -1,0 +1,222 @@
+
+[[company]]
+  name = "Airvet"
+  role = "Software Engineer"
+  date = "2021 - Current"
+  text = [
+      "With my extensive experience, I excel in resolving errors and monitoring systems, leveraging tools like Datadog I've led successful language migrations, transitioning Python-based REST APIs to Go, while continuously adding new features in. ",
+      "My expertise extends to designing and implementing configuration patterns, refactoring workers and database interactions for efficiency. I’m committed to defining best practices for development and deployment, and I ensure effective management of dependency injection through well-crafted patterns. ",
+      "Additionally, I specialize in building high-performance GRPC APIs to meet demanding requirements"
+  ]
+  [[company.tags]]
+  name = "Go"
+  url = "/tags/go/"
+
+  [[company.tags]]
+    name = "Python"
+    url = "/tags/python/"
+
+  [[company.tags]]
+    name = "APIS"
+    url = "/tags/apis/"
+
+[[company]]
+  name = "Koor Inc"
+  date = "2023 - 2024 (project)"
+  role = "Cloud Storage Engineer"
+  text = [
+    "My time at Koor was highly engaging, allowing me to work on the company's projects while continuously contributing to Rook, an open-source initiative for utilizing Ceph in Kubernetes. I actively addressed issues and enhanced features for Rook, focusing on documentation, Helm charts, core features, and tests. I leveraged the Ceph API to monitor the status of Ceph clusters and developed GRPC APIs to facilitate smooth operations. My work also included utilizing the Kubernetes API for effective cluster monitoring. Additionally, I played a key role in the planning and development of Genesis, a Koor tool for managing Ceph clusters. This involved designing the API, planning the roadmap, and integrating with Kubernetes, KubeOne, and Hetzner Cloud",
+  ]
+
+  [[company.tags]]
+  name = "Go"
+  url = "/tags/go/"
+
+  [[company.tags]]
+    name = "Kubernetes"
+    url = "/tags/kubernetes/"
+
+  [[company.tags]]
+    name = "APIS"
+    url = "/tags/apis/"
+
+[[company]]
+  name = "Within3"
+  role = "Python Engineer"
+  date = "2021 - 2022"
+  text = [
+    "I've developed a range of Python-based microservices to seamlessly integrate custom Natural Language Processing (NLP) libraries with the frontend. This was primarily accomplished using Python and Flask, with one service implemented in TypeScript for enhanced functionality.",
+  ]
+    [[company.tags]]
+  name = "Python"
+  url = "/tags/python/"
+
+  [[company.tags]]
+    name = "Microservices"
+    url = "/tags/microservices/"
+
+  [[company.tags]]
+    name = "APIS"
+    url = "/tags/apis/"
+
+[[company]]
+  name = "Siclo"
+  role = "Head Engineer (Hands On)"
+  date = "2018 - 2021"
+  text = [
+    "In my role as Head of Engineering at Siclo, I led a team of 20 engineers, taking charge of multiple aspects critical to the success of the engineering department. One of my primary initiatives was spearheading the adoption of Scrum methodologies, which significantly streamlined task management. By fostering collaboration, promoting transparency, and encouraging iterative progress, the team was able to achieve more efficient and organized workflows.",
+
+    "I also placed a strong emphasis on Continuous Integration (CI), implementing robust pipelines that automated critical processes. This approach not only accelerated development cycles but also improved code quality, allowing the team to maintain high standards throughout the development lifecycle.",
+
+    "A key achievement was orchestrating the transition to containerized environments using Docker and Kubernetes. This shift resulted in notable improvements in resource utilization, scalability, and deployment efficiency, positioning the team to better handle increased demand and complexity in our infrastructure.",
+
+    "Lastly, I prioritized system reliability by establishing meticulous monitoring protocols and implementing fault-tolerance measures. These proactive strategies ensured the early identification and mitigation of potential bottlenecks or vulnerabilities, reinforcing the stability and performance of our systems.",
+  ]
+
+   [[company.tags]]
+    name = "Kubernetes"
+    url = "/tags/kubernetes/"  
+
+    [[company.tags]]
+    name = "Cloud"
+    url = "/tags/cloud/" 
+
+        [[company.tags]]
+    name = "AWS"
+    url = "/tags/aws/"  
+
+    [[company.tags]]
+    name = "Leadership"
+    url = "/tags/leadership/"  
+
+    [[company.tags]]
+  name = "Python"
+  url = "/tags/python/"
+
+  [[company.tags]]
+    name = "Microservices"
+    url = "/tags/microservices/"
+
+  [[company.tags]]
+    name = "APIS"
+    url = "/tags/apis/"    
+  
+
+[[company]]
+  name = "GFI/Kerio"
+  role = "Software Architect (Hands On)"
+  date = "2017 - 2018"
+  text = [
+    "As an individual Architect at Kerio Updates, I played a pivotal role in the evolution of our platform. One of my primary responsibilities was leading the transition from PHP to Python, a migration effort that significantly enhanced the platform's robustness and scalability, laying the foundation for future growth.",
+
+    "In addition to migration, I was deeply involved in maintaining and optimizing legacy code. By diligently addressing bugs and implementing necessary code cleanups, I ensured the platform's stability, making it more resilient and easier to manage over time.",
+
+    "Another key focus was on performance optimization. I introduced various performance-enhancing measures, which resulted in a more efficient and responsive platform, improving the overall user experience and operational efficiency",
+  ]
+
+   [[company.tags]]
+  name = "PHP"
+  url = "/tags/php/"
+
+    [[company.tags]]
+  name = "Python"
+  url = "/tags/python/"
+
+  [[company.tags]]
+    name = "Microservices"
+    url = "/tags/microservices/"
+
+  [[company.tags]]
+    name = "APIS"
+    url = "/tags/apis/"
+
+
+ 
+[[company]]
+  name = "Aurea - Lyris"
+  role = "Software Architect (Hands On)"
+  date = "2015 - 2017"
+  text = [
+    "As Technical Lead and individual contributor on the EmailLabs project, I played a key role in improving the overall quality and security of the platform.",
+    "I systematically elevated code quality through refactoring, cleanup, and the development of custom private packages to enhance tool abstraction. I introduced Test-Driven Development (TDD) practices, resulting in a more robust and reliable codebase. ",
+    "Additionally, I conducted comprehensive security audits, addressing vulnerabilities to ensure a secure application environment. I also implemented Docker for efficient deployment and oversaw AWS account management to maintain seamless operational performance.",
+  ]
+
+   [[company.tags]]
+  name = "PHP"
+  url = "/tags/php/"
+
+    [[company.tags]]
+  name = "architecture"
+  url = "/tags/architecture/"
+
+  [[company.tags]]
+    name = "Security"
+    url = "/tags/security/" 
+
+   [[company.tags]]
+    name = "SQL"
+    url = "/tags/sql/" 
+
+
+[[company]]
+  name = "ClickBus"
+  role = "Chief Technology Officer (Hands On)"
+  date = "2014 - 2015"
+  text = [
+    "As an individual contributor and leader at Clickbus Mexico, I played a pivotal role in enhancing their technological processes. This involved:",
+    "Spearheading the adoption of the Scrum framework for more efficient project management.",
+"Coordinating seamless releases and deployments to optimize operational workflow.",
+"Managing infrastructure for heightened reliability and performance.",
+"Planning and orchestrating various IT projects to ensure successful execution."
+  ]
+
+   [[company.tags]]
+  name = "PHP"
+  url = "/tags/php/"
+
+    [[company.tags]]
+  name = "architecture"
+  url = "/tags/architecture/"
+
+  [[company.tags]]
+    name = "Leadership"
+    url = "/tags/leadership/" 
+
+   [[company.tags]]
+    name = "SQL"
+    url = "/tags/sql/" 
+
+    [[company.tags]]
+    name = "CI-CD"
+    url = "/tags/cd-cd/"   
+
+
+  [[company]]
+  name = "Linio"
+  role = "Sr. Software Developer & Team Leader"
+  date = "2012 - 2014"
+  text = [
+    "I began my journey at Linio as a Senior Developer, contributing significantly to the early stages of development. I played a key role in adding new features, training new developers, and automating critical processes.",
+    "After a year of exemplary work, I was promoted to the position of Team Leader. In this capacity, I took charge of various teams, focusing on backend improvement. My responsibilities included conducting code reviews, leading technical process planning, and adeptly resolving complex challenges and blockers for both the team and project management and quality assurance teams."
+  ]
+
+   [[company.tags]]
+  name = "PHP"
+  url = "/tags/php/"
+
+    [[company.tags]]
+  name = "architecture"
+  url = "/tags/architecture/"
+
+  [[company.tags]]
+    name = "Leadership"
+    url = "/tags/leadership/" 
+
+   [[company.tags]]
+    name = "SQL"
+    url = "/tags/sql/" 
+
+    [[company.tags]]
+    name = "CI-CD"
+    url = "/tags/cd-cd/"     

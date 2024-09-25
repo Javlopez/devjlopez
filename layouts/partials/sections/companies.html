@@ -1,0 +1,53 @@
+{{/* Default data */}}
+{{ $title := "Proud to have earned the trust of these companies" }}
+{{ $educations := slice
+  (dict "title" "University" "date" "2015 - 2020" "text" "Graduated with a Bachelor's degree in Computer Science. Specialized in software engineering, web development, and data science. Completed a thesis on machine learning algorithms for image recognition.")
+  (dict "title" "High School" "date" "2005 - 2015" "text" "Experienced in web development technologies such as HTML, CSS, and JavaScript. Proficient in front-end frameworks such as React, Angular, and Vue.js. Well-versed in responsive design, cross-browser compatibility, and web performance optimization.")
+  (dict "title" "Kindergarten" "date" "2000 - 2005" "text" "Experienced in backend development technologies such as Node.js, Express, and Django. Proficient in RESTful APIs, GraphQL, and microservices architecture. Well-versed in database management using SQL and NoSQL databases.")
+}}
+
+{{/* Custom data from configuration file */}}
+{{ with site.Data.sections.education }}
+  {{ $educations = slice }}
+  {{ if .title }}{{ $title = .title }}{{ end }}
+  {{ if .education }}{{ $educations = .education }}{{ end }}
+{{ end }}
+
+
+<style>
+  .logo-grayscale {
+  opacity: 0.1; /* Muestra los logos en un tono gris */
+  transition: opacity 0.3s ease-in-out; /* Transición suave de opacidad */
+}
+
+.logo-grayscale:hover {
+  opacity: 1; /* Devuelve los logos a su color original al pasar el mouse */
+}
+</style>
+
+<h2 class="text-center p-5 text-4xl md:text-5xl lg:text-7xl font-medium font-poppins text-gray-400">
+</h2>
+<div class="-mx-5 flex flex-wrap text-gray-600">
+  <div class="bg-white py-24 sm:py-32"></div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <h2 class="text-center text-lg font-semibold leading-8 text-gray-900"> {{ $title }}</h2>
+    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5" style="display: inline-flex;">
+      {{ range site.Data.sections.companies.slides }}
+      <a href="{{ .url }}" target="_blank" style="padding: 0 12px;" class="logo-grayscale">
+        {{ $image := .image }} 
+        {{ with resources.Get $image }}
+          {{ if eq .MediaType.SubType "svg" }}
+          <img class="col-span-2 max-h-12 object-contain lg:col-span-1" src="{{ .Permalink }}" alt="{{ $.title }}" width="158" height="48">
+          {{ else }} 
+            {{ $resized := .Fit "158x48" }}
+            <img class="col-span-2 max-h-12 object-contain lg:col-span-1" src="{{ $resized.Permalink }}" alt="{{ $.title }}" width="158" height="48">
+          {{ end }}
+        {{ end }}
+      </a>
+      {{end}}
+    </div>
+  </div>
+</div>
+</div>
+
+
