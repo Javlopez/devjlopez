@@ -3,7 +3,7 @@ baseURL = 'https://devjlopez.com/'
 languageCode = 'en-us'
 title        = 'DevJlopez'
 
-googleAnalytics = ''
+googleAnalytics = 'G-D6MRVVBDW7'
 
 [params]
   favicon     = "img/devjlopez-favicon-color.png"
