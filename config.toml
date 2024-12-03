@@ -5,6 +5,8 @@ title        = 'DevJlopez'
 
 googleAnalytics = 'G-D6MRVVBDW7'
 
+builddrafts = true 
+
 [params]
   favicon     = "img/devjlopez-favicon-color.png"
   description = "Javier Lopez Lopez personal website"
