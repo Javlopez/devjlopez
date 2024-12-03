@@ -1,6 +1,6 @@
 ---
 title: "Introducción a Kubernetes: La Plataforma para la Gestión de Contenedores"
-date: 2024-10-03T15:55:25-06:00
+date: 2024-12-03T15:55:25-06:00
 draft: false
 tags: ["kubernetes"]
 image: 'container-ship-6631117_1280.jpg'
