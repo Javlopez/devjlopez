@@ -4,6 +4,7 @@ date: 2024-12-02T15:55:25-06:00
 draft: false
 tags: ["kubernetes"]
 image: 'container-ship-6631117_1280.jpg'
+description: "Descubre cómo Kubernetes ha revolucionado la gestión de aplicaciones modernas, permitiendo despliegues escalables, alta disponibilidad y automatización en entornos multi-nube. Aprende por qué es la elección de grandes empresas como Google, Spotify y Airbnb."
 ---
 
 

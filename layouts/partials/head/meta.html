@@ -1,19 +1,33 @@
-<meta property="og:title" content="Homepage | hugo-porto theme" />
+<!--<meta property="og:title" content="Homepage | hugo-porto theme" />-->
 
-<meta property="og:locale" content="en_US" />
+<!--<meta property="og:locale" content="en_US" />-->
 
-<meta property="og:url" content="//" />
+<!--<meta property="og:url" content="//" />-->
 
-<meta
-  name="description"
-  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+<!--<meta-->
+<!--  name="description"-->
+<!--  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />-->
 
-<meta name="theme-color" content="#5540af" />
+<!--<meta name="theme-color" content="#5540af" />-->
 
-<meta property="og:site_name" content="hugo-porto theme" />
+<!--<meta property="og:site_name" content="hugo-porto theme" />-->
 
-<meta property="og:image" content="//assets/img/social.jpg" />
+<!--<meta property="og:image" content="//assets/img/social.jpg" />-->
+
+<!--<meta name="twitter:card" content="summary_large_image" />-->
+
+<!--<meta name="twitter:site" content="@tailwindmade" />-->
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:locale" content="{{ .Site.Params.ogLocale | default "en_US" }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}" />
+
+<meta name="theme-color" content="{{ .Site.Params.themeColor | default "#5540af" }}" />
+<meta property="og:site_name" content="{{ .Site.Params.siteName | default .Site.Title }}" />
+
+
+<meta property="og:image" content="{{ if .Params.image }}{{ .Page.RelPermalink | absURL }}/{{ .Params.image }}{{ else }}{{ "assets/img/social.jpg" | absURL }}{{ end }}" />
+
 
 <meta name="twitter:card" content="summary_large_image" />
-
-<meta name="twitter:site" content="@tailwindmade" />
+<meta name="twitter:site" content="{{ .Site.Params.twitterHandle | default "@devjlopez" }}" />

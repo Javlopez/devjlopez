@@ -9,8 +9,16 @@ builddrafts = true
 
 [params]
   favicon     = "img/devjlopez-favicon-color.png"
-  description = "Javier Lopez Lopez personal website"
-  keywords    = "Javier Lopez Lopez, personal website, blog, portfolio"
+  description = "Learning great things by doing"
+  keywords    = "Javier, DevJlopez, JavLopez, Golang, PHP, Python, Kubernetes, DevOps"
+
+  ogLocale = "es_MX"
+  themeColor = "#5540af"
+  siteName = "DevJlopez"
+  ogImage = "assets/img/social.jpg"
+  twitterHandle = "@devjlopez"
+
+
 
   [params.author]
     name = 'Dev Javier Lopez'
