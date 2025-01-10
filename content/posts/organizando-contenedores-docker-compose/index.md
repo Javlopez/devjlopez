@@ -1,6 +1,6 @@
 ---
 title: "Organizando contenedores - docker compose"
-date: 2025-01-10T15:55:25-06:00
+date: 2025-01-09T15:55:25-06:00
 draft: false
 tags: ["compose", "docker", "automate"]
 image: 'pexels-anilsharma65-28503131.jpg'
